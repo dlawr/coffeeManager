@@ -1,0 +1,36 @@
+{
+  "name": "coffeemanager",
+  "version": "1.0.0",
+  "description": "Create a Node.js CRUD app using React.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "bundle": "watchify -t [ babelify --presets [react es2015 ] ] public/js/script.js -o public/js/bundle.js -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douglaswissett/coffeeManager.git"
+  },
+  "author": "Douglas Wissett Walker & Daniel Lawrence",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/douglaswissett/coffeeManager/issues"
+  },
+  "homepage": "https://github.com/douglaswissett/coffeeManager#readme",
+  "dependencies": {
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.2.0",
+    "body-parser": "^1.15.0",
+    "browserify": "^13.0.0",
+    "express": "^4.13.4",
+    "jquery": "^2.2.1",
+    "morgan": "^1.7.0",
+    "path": "^0.12.7",
+    "pg-promise": "^3.3.0",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "watchify": "^3.7.0"
+  }
+}
